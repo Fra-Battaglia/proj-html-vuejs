@@ -1,6 +1,7 @@
 <script>
 
 	import AppHeaderVoice from './AppHeaderVoice.vue'
+	import AppButton from './AppButton.vue';
 
 	export default {
 		data() {
@@ -47,7 +48,8 @@
 		},
 
 		components: {
-			AppHeaderVoice
+			AppHeaderVoice,
+			AppButton
 		}
 	}
 </script>
@@ -66,13 +68,15 @@
 				<div class="col-6">
 					<nav>
 						<ul class="mb-0 d-flex justify-content-between">
-							<AppHeaderVoice v-for="item in navbar_voices" :label="item.label" :url="item.url"/>
+							<AppHeaderVoice v-for="item in navbar_voices" :label="item.label" :url="item.url" :class="item.dropdown == true ? 'dropdown-toggle' : ''"/>
 						</ul>
 					</nav>
 				</div>
 
 
-				<div class="col-3"></div>
+				<div class="col-3 text-end">
+					<AppButton :label="`LIVE STREAMING`"/>
+				</div>
 			</div>
 			
 			
@@ -80,7 +84,7 @@
 	</header>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
 	@use './styles/partials/variables' as*;
 	@use './styles/partials/mixins' as*;
@@ -96,11 +100,6 @@
 
 				ul {
 					list-style: none;
-
-					a {
-						color: $light-color;
-						text-decoration: none;
-					}
 				}
 			}
 		}
