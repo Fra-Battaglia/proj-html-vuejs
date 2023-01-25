@@ -12,5 +12,19 @@
 }
 
 body {
+	font-size: 18px;
 	color: $light-color;
+	font-family: 'Barlow', sans-serif;
+}
+
+.my-text-primary {
+	color: $primary-color;
+}
+
+.my-font-primary {
+	font-family: $primary-font;
+}
+
+.my-font-secondary {
+	font-family: $secondary-font;
 }
