@@ -11,6 +11,7 @@
 	<div class="jumbotron">
 		<div class="container d-flex align-items-center position-relative">
 			<div class="row w-100">
+
 				<div class="col-4 d-flex align-items-center">
 					<div class="jumbotron-content z-1">
 						<h4 class="my-font-secondary my-text-primary">Game With Live Stearming</h4>
@@ -20,9 +21,11 @@
 					</div>
 					<img src="../assets/img/game-controler.png" alt="" class="position-absolute" style="bottom: 100px; left: -50px">
 				</div>
+
 				<div class="col-8 ">
 					<img src="../assets/img/index-banner-illus.png" alt="" class="position-absolute top-0">
 				</div>
+				
 			</div>
 		</div>
 	</div>

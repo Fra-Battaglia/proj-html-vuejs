@@ -1,6 +1,7 @@
 <script>
 	import AppHeader from './components/AppHeader.vue';
 	import AppJumbotron from './components/AppJumbotron.vue';
+	import AppFooter from './components/AppFooter.vue';
 
 	export default {
 		data() {
@@ -11,7 +12,8 @@
 
 		components: {
 			AppHeader,
-			AppJumbotron
+			AppJumbotron,
+			AppFooter
 		}
 	}
 </script>
@@ -19,6 +21,7 @@
 <template>
 	<AppHeader />
 	<AppJumbotron />
+	<AppFooter />
 </template>
 
 <style lang="scss">
