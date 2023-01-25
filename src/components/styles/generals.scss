@@ -3,3 +3,14 @@
 
 @import "../../../node_modules/bootstrap/scss/bootstrap";
 @import "../../../node_modules/@fortawesome/fontawesome-free/css/all.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Orbitron:wght@600;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	color: $light-color;
+}
