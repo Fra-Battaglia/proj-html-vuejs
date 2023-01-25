@@ -55,19 +55,19 @@
 </script>
 
 <template>
-	<header class="position-fixed w-100">
+	<header class="w-100 position-absolute z-1">
 		<div class="container">
-			<div class="row align-items-center">
+			<div class="row align-items-center justify-content-between">
 
 				<!-- Logo -->
 
-				<div class="col-3"><img src="https://pixner.net/futio2/main/assets/images/logo.png" alt="logo"></div>
+				<div class="col-3"><img src="../assets/img/logo.png" alt="logo"></div>
 
 				<!-- Nav -->
 
-				<div class="col-6">
+				<div class="col-5">
 					<nav>
-						<ul class="mb-0 d-flex justify-content-between">
+						<ul class="mb-0 d-flex justify-content-between list-unstyled">
 							<AppHeaderVoice v-for="item in navbar_voices" :label="item.label" :url="item.url" :class="item.dropdown == true ? 'dropdown-toggle' : ''"/>
 						</ul>
 					</nav>
@@ -90,17 +90,12 @@
 	@use './styles/partials/mixins' as*;
 
 	header {
-		z-index: 1;
 
 		.row {
 			height: 100px;
 
 			nav {
 				font-family: 'Orbitron', sans-serif;
-
-				ul {
-					list-style: none;
-				}
 			}
 		}
 	}
