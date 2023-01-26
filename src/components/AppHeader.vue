@@ -175,7 +175,11 @@
 				</div>
 
 
-				<div class="col-3 text-end">
+				<div class="col-3 d-flex justify-content-end gap-4 align-items-center">
+					<a href="#" class="cart position-relative">
+						<img src="../assets/img/cart-icon.png" alt="cart">
+						<span class="badge position-absolute rounded-circle my-bg-secondary my-text-dark d-flex align-items-center justify-content-center">03</span>
+					</a>
 					<AppButton :label="`LIVE STREAMING`"/>
 				</div>
 			</div>
@@ -198,6 +202,13 @@
 			nav {
 				font-family: 'Orbitron', sans-serif;
 			}
+		}
+
+		.badge {
+			width: 20px;
+			height: 20px;
+			top: -4px;
+			right: -5px;
 		}
 	}
 </style>

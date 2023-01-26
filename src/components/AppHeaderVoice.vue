@@ -13,7 +13,7 @@
 <template>
 	<li>
 		<a :href="url" class="nav-link d-inline-block">{{ label }}</a>
-		<ul class="dropdown position-absolute my-translate-25-x list-unstyled my-bg-primary">
+		<ul class="dropdown position-absolute my-translate-25-x list-unstyled my-bg-dark">
 			<li v-for="item in dropdown_menu" class="py-2 px-3 position-relative"><a href="#">{{ item.label }}</a></li>
 		</ul>
 	</li>

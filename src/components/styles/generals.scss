@@ -25,6 +25,10 @@ body {
 	color: $light-color;
 }
 
+.my-text-dark {
+	color: $dark-color;
+}
+
 .my-font-primary {
 	font-family: $primary-font;
 }
@@ -34,7 +38,15 @@ body {
 }
 
 .my-bg-primary {
-	background-color: $primary-background;
+	background-color: $primary-color;
+}
+
+.my-bg-secondary {
+	background-color: $secondary-color;
+}
+
+.my-bg-dark {
+	background-color: $primary-dark-background;
 }
 
 .p-120 {

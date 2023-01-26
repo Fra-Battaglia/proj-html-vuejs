@@ -141,6 +141,10 @@
 				</div>
 				
 			</div>
+
+		</div>
+		<div class="copyright my-bg-dark d-flex align-items-center justify-content-center">
+			<div>Copyright © 2022 <span class="my-text-primary">FUTIO</span>. All rights reserved.</div>
 		</div>
 	</footer>
 </template>
@@ -171,6 +175,10 @@
 				line-height: 30px;
 				margin-bottom: 10px;
 			}
+		}
+
+		.copyright {
+			height: 90px;
 		}
 	}
 </style>
