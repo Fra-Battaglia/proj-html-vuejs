@@ -107,13 +107,13 @@
 </script>
 
 <template>
-	<footer class="py-4">
+	<footer>
 		<div class="container">
-			<div class="row">
+			<div class="row p-120">
 
 				<div class="col-4">
-					<div><a href="#"><img src="../assets/img/logo.png" alt="logo"></a></div>
-					<p>Lorem ipsum dolor sit amet, elit. varius enim in eros elementum Duis mi quis viverra ornare</p>
+					<div class="mb-4"><a href="#"><img src="../assets/img/logo.png" alt="logo"></a></div>
+					<p class="mb-4">Lorem ipsum dolor sit amet, elit. varius enim in eros elementum Duis mi quis viverra ornare</p>
 					<div class="social-icons d-flex gap-3">
 						<a :href="item.url" class="social d-flex justify-content-center align-items-center my-text-light rounded-circle text-decoration-none" v-for="item in social_icons"><i :class="item.icon"></i></a>
 					</div>
@@ -122,7 +122,21 @@
 				<div class="col-8">
 					<div class="row">
 						<AppFooterVoices v-for="item in footer_columns" :title="item.title" :voices="item.footer_voices"/>
-						<div class="col"></div>
+
+						<div class="col contacts">
+							<h4 class="my-font-secondary">Contacts</h4>
+							<ul class="list-unstyled">
+								<li>
+									<div class="my-text-primary">Location:</div>
+									<div>4 Mayfield, Buckden, PE19 5SZ</div>
+								</li>
+
+								<li>
+									<div class="my-text-primary">Phone:</div>
+									<div>(302) 555-0107</div>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 				
@@ -150,6 +164,13 @@
 		a.social:hover {
 			background-color: $primary-color;
 			color: $light-color;
+		}
+
+		ul {
+			li {
+				line-height: 30px;
+				margin-bottom: 10px;
+			}
 		}
 	}
 </style>

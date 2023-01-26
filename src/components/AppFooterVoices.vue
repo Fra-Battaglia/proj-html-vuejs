@@ -3,7 +3,7 @@
 		props: {
 			title: String,
 			url: String,
-			voices: String,
+			voices: Array,
 		}
 	}
 </script>
@@ -24,6 +24,9 @@
 
 	ul {
 		li {
+			line-height: 30px;
+			margin-bottom: 10px;
+
 			a {
 				color: $grey-color;
 				transition: 0.15s;
