@@ -11,31 +11,132 @@
 						label: 'Home',
 						url: '#',
 						status: true,
+						
 						dropdown: false
 					},
 					{
 						label: 'Games',
 						url: '#',
 						status: false,
-						dropdown: true
+						dropdown: true,
+						dropdown_voices: [
+							{
+								label: 'Games',
+								url: '#',
+							},
+							{
+								label: 'Games Details',
+								url: '#',
+							},
+							{
+								label: 'Match Deatails',
+								url: '#',
+							},
+						]
 					},
 					{
 						label: 'Shop',
 						url: '#',
 						status: false,
-						dropdown: true
+						dropdown: true,
+						dropdown_voices: [
+							{
+								label: 'Shop',
+								url: '#',
+								dropdown: false
+							},
+							{
+								label: 'Shop Single',
+								url: '#',
+								dropdown: false
+							},
+							{
+								label: 'Shop Single 2',
+								url: '#',
+								dropdown: false
+							},
+							{
+								label: 'Shop Single 3',
+								url: '#',
+								dropdown: false
+							},
+							{
+								label: 'Shop Single 4',
+								url: '#',
+								dropdown: false
+							},
+						]
 					},
 					{
 						label: 'Pages',
 						url: '#',
 						status: false,
-						dropdown: true
+						dropdown: true,
+						dropdown_voices: [
+							{
+								label: 'About Us',
+								url: '#',
+								dropdown: false
+							},
+							{
+								label: 'Team',
+								url: '#',
+								dropdown: false
+							},
+							{
+								label: 'Player',
+								url: '#',
+								dropdown: false
+							},
+							{
+								label: 'Upcoming Matches',
+								url: '#',
+								dropdown: false
+							},
+							{
+								label: 'FAQs',
+								url: '#',
+								dropdown: false
+							},
+							{
+								label: 'Privacy Policy',
+								url: '#',
+								dropdown: false
+							},
+							{
+								label: 'Terms',
+								url: '#',
+								dropdown: false
+							},
+							{
+								label: 'Coming Soon',
+								url: '#',
+								dropdown: false
+							},
+							{
+								label: 'Error',
+								url: '#',
+								dropdown: false
+							},
+						]
 					},
 					{
 						label: 'Blog',
 						url: '#',
 						status: false,
-						dropdown: true
+						dropdown: true,
+						dropdown_voices: [
+							{
+								label: 'Blog',
+								url: '#',
+								dropdown: false
+							},
+							{
+								label: 'Blog Single',
+								url: '#',
+								dropdown: false
+							},
+						]
 					},
 					{
 						label: 'Contact',
@@ -68,7 +169,7 @@
 				<div class="col-5">
 					<nav>
 						<ul class="mb-0 d-flex justify-content-between list-unstyled">
-							<AppHeaderVoice v-for="item in navbar_voices" :label="item.label" :url="item.url" :class="item.dropdown == true ? 'dropdown-toggle' : ''"/>
+							<AppHeaderVoice v-for="item in navbar_voices" :label="item.label" :url="item.url" :dropdown_menu="item.dropdown_voices" :class="item.dropdown == true ? 'dropdown-toggle' : ''"/>
 						</ul>
 					</nav>
 				</div>
