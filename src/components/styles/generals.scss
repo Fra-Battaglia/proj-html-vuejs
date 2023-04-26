@@ -45,6 +45,14 @@ body {
 	background-color: $secondary-color;
 }
 
+.my-border-secondary {
+	border-color: $secondary-color;
+}
+
+.my-bg-light {
+	background-color: $light-color;
+}
+
 .my-bg-dark {
 	background-color: $primary-dark-background;
 }

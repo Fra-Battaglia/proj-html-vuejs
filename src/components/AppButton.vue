@@ -8,8 +8,8 @@
 </script>
 
 <template>
-	<a :href="url" class="my-button rounded-pill p-1 my-border-primary d-inline-block">
-		<button class="rounded-pill py-2 px-4 border-0">{{ label }}</button>
+	<a :href="url" class="my-button rounded-pill p-1 my-border-primary d-inline-block text-decoration-none">
+		<button class="rounded-pill py-2 px-4 border-0 d-flex align-items-center">{{ label }}</button>
 	</a>
 </template>
 
@@ -22,11 +22,14 @@
 		border-color: $secondary-color;
 		font-family: 'Barlow', sans-serif;
 		transition: 0.15s;
+		height: 52px;
 		
 		button {
 			background-color: $secondary-color;
 			font-weight: 600;
 			transition: 0.15s;
+			height: 100%;
+			width: 100%;
 		}
 	}
 
