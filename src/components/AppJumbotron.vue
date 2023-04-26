@@ -16,7 +16,7 @@
 					<div class="jumbotron-content z-1">
 						<h4 class="my-font-secondary my-text-primary">Game With Live Stearming</h4>
 						<h1 class="my-font-secondary">Future Of Esports</h1>
-						<p class="my-font-primary">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+						<p class="my-font-primary my-text-grey">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
 						<div class="d-flex">
 							<AppButton :label="`EXPLORE GAMES`" />
 							<a :href="url" class="my-button rounded-circle p-1 my-border-secondary ms-2 play-button">
