@@ -23,6 +23,7 @@
 		font-family: 'Barlow', sans-serif;
 		transition: 0.15s;
 		height: 52px;
+		width: auto;
 		
 		button {
 			background-color: $secondary-color;

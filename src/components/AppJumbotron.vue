@@ -19,7 +19,7 @@
 						<p class="my-font-primary my-text-grey">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
 						<div class="d-flex">
 							<AppButton :label="`EXPLORE GAMES`" />
-							<a :href="url" class="my-button rounded-circle p-1 my-border-secondary ms-2 play-button">
+							<a href="#" class="my-button rounded-circle p-1 my-border-secondary ms-2 play-button">
 								<button class="rounded-circle border-0 d-flex my-bg-light align-items-center justify-content-center"><img src="../assets/img/play-icon.png" alt="play-icon"></button>
 							</a>
 						</div>
