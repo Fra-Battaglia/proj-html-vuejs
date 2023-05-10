@@ -1,8 +1,9 @@
 <script>
 	import AppHeader from './components/AppHeader.vue';
 	import AppJumbotron from './components/AppJumbotron.vue';
-	import AppFooter from './components/AppFooter.vue';
 	import AppFeatures from './components/AppFeatures.vue';
+	import AppUpcomingMatches from './components/AppUpcomingMatches.vue';
+	import AppFooter from './components/AppFooter.vue';
 
 	export default {
 		data() {
@@ -15,6 +16,7 @@
 			AppHeader,
 			AppJumbotron,
 			AppFeatures,
+			AppUpcomingMatches,
 			AppFooter
 		}
 	}
@@ -24,6 +26,7 @@
 	<AppHeader />
 	<AppJumbotron />
 	<AppFeatures />
+	<AppUpcomingMatches />
 	<AppFooter />
 </template>
 
