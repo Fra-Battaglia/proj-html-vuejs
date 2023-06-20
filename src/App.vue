@@ -3,6 +3,7 @@
 	import AppJumbotron from './components/AppJumbotron.vue';
 	import AppFeatures from './components/AppFeatures.vue';
 	import AppUpcomingMatches from './components/AppUpcomingMatches.vue';
+	import AppNumbers from './components/AppNumbers.vue';
 	import AppFooter from './components/AppFooter.vue';
 
 	export default {
@@ -17,6 +18,7 @@
 			AppJumbotron,
 			AppFeatures,
 			AppUpcomingMatches,
+			AppNumbers,
 			AppFooter
 		}
 	}
@@ -27,6 +29,7 @@
 	<AppJumbotron />
 	<AppFeatures />
 	<AppUpcomingMatches />
+	<AppNumbers />
 	<AppFooter />
 </template>
 
