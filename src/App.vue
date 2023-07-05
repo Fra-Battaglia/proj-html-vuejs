@@ -5,6 +5,7 @@
 	import AppUpcomingMatches from './components/AppUpcomingMatches.vue';
 	import AppNumbers from './components/AppNumbers.vue';
 	import AppLiveStreaming from './components/AppLiveStreaming.vue';
+	import AppFeedback from './components/AppFeedback.vue';
 	import AppFooter from './components/AppFooter.vue';
 
 	export default {
@@ -21,6 +22,7 @@
 			AppUpcomingMatches,
 			AppNumbers,
 			AppLiveStreaming,
+			AppFeedback,
 			AppFooter
 		}
 	}
@@ -33,6 +35,7 @@
 	<AppUpcomingMatches />
 	<AppNumbers />
 	<AppLiveStreaming />
+	<AppFeedback />
 	<AppFooter />
 </template>
 

@@ -25,9 +25,9 @@
 					</a>
 
 					<div class="play-button">
-						<div class="play-icon">
+						<a href="#" class="play-icon">
 							<img src="../assets/img/play-icon.png" alt="">
-						</div>
+						</a>
 						<h5>League Of Legends</h5>
 					</div>
 
