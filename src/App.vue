@@ -6,6 +6,7 @@
 	import AppNumbers from './components/AppNumbers.vue';
 	import AppLiveStreaming from './components/AppLiveStreaming.vue';
 	import AppFeedback from './components/AppFeedback.vue';
+	import AppOffer from './components/AppOffer.vue';
 	import AppFooter from './components/AppFooter.vue';
 
 	export default {
@@ -23,6 +24,7 @@
 			AppNumbers,
 			AppLiveStreaming,
 			AppFeedback,
+			AppOffer,
 			AppFooter
 		}
 	}
@@ -36,6 +38,7 @@
 	<AppNumbers />
 	<AppLiveStreaming />
 	<AppFeedback />
+	<AppOffer />
 	<AppFooter />
 </template>
 

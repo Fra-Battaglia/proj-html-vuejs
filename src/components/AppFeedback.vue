@@ -64,7 +64,7 @@
 	@use './styles/partials/mixins' as*;
 
 	.feedback {
-		padding: 120px 0;
+		padding-top: 120px;
 
 		.feedback-content {
 			h1 {
