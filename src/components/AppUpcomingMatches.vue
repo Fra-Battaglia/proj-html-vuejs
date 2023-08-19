@@ -76,7 +76,14 @@
 			</div>
 			<div class="row">
 				<div class="col-6" v-for="item in matches">
-					<AppMatch :game="item.game" :date="item.date" :team_1_img="item.team_1.img" :team_1="item.team_1.name" :team_2_img="item.team_2.img" :team_2="item.team_2.name"/>
+					<AppMatch 
+						:game="item.game" 
+						:date="item.date" 
+						:team_1_img="item.team_1.img" 
+						:team_1="item.team_1.name" 
+						:team_2_img="item.team_2.img" 
+						:team_2="item.team_2.name"
+					/>
 				</div>
 			</div>
 			<div class="row justify-content-center">

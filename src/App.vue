@@ -7,6 +7,7 @@
 	import AppLiveStreaming from './components/AppLiveStreaming.vue';
 	import AppFeedback from './components/AppFeedback.vue';
 	import AppOffer from './components/AppOffer.vue';
+	import AppNews from './components/AppNews.vue';
 	import AppFooter from './components/AppFooter.vue';
 
 	export default {
@@ -25,6 +26,7 @@
 			AppLiveStreaming,
 			AppFeedback,
 			AppOffer,
+			AppNews,
 			AppFooter
 		}
 	}
@@ -39,6 +41,7 @@
 	<AppLiveStreaming />
 	<AppFeedback />
 	<AppOffer />
+	<AppNews />
 	<AppFooter />
 </template>
 
