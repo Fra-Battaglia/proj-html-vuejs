@@ -18,6 +18,10 @@ body {
 	background-color: #000000;
 }
 
+a {
+	color: inherit;
+}
+
 .my-text-primary {
 	color: $primary-color;
 }

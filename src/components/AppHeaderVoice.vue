@@ -6,14 +6,14 @@
 			status: Boolean,
 			dropdown: Boolean,
 			dropdown_menu: Array
-		}
+		},
 	}
 </script>
 
 <template>
-	<li>
-		<a :href="url" class="nav-link d-inline-block">{{ label }}</a>
-		<ul class="dropdown position-absolute my-translate-25-x list-unstyled my-bg-dark">
+	<li :class="dropdown == true ? 'expandable' : ''">
+		<a :href="url" :class="dropdown == true ? 'dropdown-toggle' : ''" class="nav-link d-inline-block">{{ label }}</a>
+		<ul :class="dropdown == true ? 'dropdown my-translate-25-x list-unstyled my-bg-dark' : ''">
 			<li v-for="item in dropdown_menu" class="py-2 px-3 position-relative"><a href="#">{{ item.label }}</a></li>
 		</ul>
 	</li>
@@ -35,13 +35,17 @@
 		}
 
 		ul.dropdown {
+			position: relative;
 			display: none;
 		}
 	}
 
-	li.dropdown-toggle:hover {
-		ul.dropdown {
-			display: block;
+	@media screen and (min-width: 992px) {
+		li.expandable:hover {
+			ul.dropdown {
+				position: absolute;
+				display: block;
+			}
 		}
 	}
 </style>

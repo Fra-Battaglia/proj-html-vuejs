@@ -3,4 +3,9 @@ import './style.css'
 import App from './App.vue'
 import * as bootstrap from 'bootstrap'
 
-createApp(App).mount('#app')
+const app = createApp(App)
+
+app.config.globalProperties.window = window;
+app.config.globalProperties.document = document;
+
+app.mount('#app')
