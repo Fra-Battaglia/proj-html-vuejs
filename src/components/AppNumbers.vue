@@ -12,10 +12,10 @@
 		<div class="container">
 			<h1>Futio Quick Facts</h1>
 			<div class="counters row">
-				<AppCounter number="9999" data="Twitch Streams" />
-				<AppCounter number="821" data="Total Games" />
-				<AppCounter number="9999" data="Youtube Streams" />
-				<AppCounter number="73" data="Pro Team" />
+				<AppCounter :number="9999" data="Twitch Streams" />
+				<AppCounter :number="821" data="Total Games" />
+				<AppCounter :number="9999" data="Youtube Streams" />
+				<AppCounter :number="73" data="Pro Team" />
 			</div>
 		</div>
 	</div>
